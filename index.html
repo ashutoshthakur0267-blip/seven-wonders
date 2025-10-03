@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modern Seven Wonders — Interactive</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Modern Seven Wonders of the World</h1>
+      <p class="subtitle">Click any card to learn more about each monument</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="card-grid" class="grid">
+      <!-- Cards are injected by script.js -->
+    </section>
+  </main>
+
+  <!-- Modal for details -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="btn-close" aria-label="Close">✕</button>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" alt="" />
+      <p id="modalDesc"></p>
+      <p class="modal-meta" id="modalMeta"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Images: Wikimedia Commons. Built with HTML · CSS · JavaScript</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
